@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0f77d7-bf64-4c1b-9a2f-ed08d148e4b4" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/consumer/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/Service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/在进行更新之前于_2024_8_5_12_36_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seafish-RPC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
@@ -60,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/xiangmu/SeafishRPC",
+    "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-provider",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +60,7 @@
       <updated>1722830808629</updated>
       <workItem from="1722830809699" duration="451000" />
       <workItem from="1722831901336" duration="10000" />
+      <workItem from="1722841055460" duration="312000" />
     </task>
     <servers />
   </component>
@@ -96,7 +78,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
