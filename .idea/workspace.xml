@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6cda9ca-5e0e-41a6-b8d1-462d663e303d" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/src/main/java/com/Seafish/common/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-common/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2kDu20iunYbopEgaZObPT2qB6jA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/xiangmu/SeafishRPC&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32413793&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="f6cda9ca-5e0e-41a6-b8d1-462d663e303d" name="更改" comment="" />
+      <created>1722830259239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722830259239</updated>
+      <workItem from="1722830260349" duration="463000" />
+      <workItem from="1722831823331" duration="70000" />
+      <workItem from="1722831929225" duration="128000" />
+      <workItem from="1722832065850" duration="35000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
