@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b95de06-ccbf-4100-b91b-099fcc773914" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/provider/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/provider/Service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/在进行更新之前于_2024_8_5_12_36_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/App.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="provider" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,6 +60,7 @@
       <updated>1722830868161</updated>
       <workItem from="1722830869265" duration="327000" />
       <workItem from="1722831917231" duration="5000" />
+      <workItem from="1722841244838" duration="364000" />
     </task>
     <servers />
   </component>
@@ -92,7 +78,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="origin/consumer" />
                       </list>
                     </value>
                   </entry>
