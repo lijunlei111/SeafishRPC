@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/RPC-common/src/main/java" />
+      <root url="file://$PROJECT_DIR$/RPC-common/src/test/java" />
+      <root url="file://$PROJECT_DIR$/RPC-consumer/src/main/java" />
+      <root url="file://$PROJECT_DIR$/RPC-consumer/src/test/java" />
+      <root url="file://$PROJECT_DIR$/RPC-provider/src/main/java" />
+      <root url="file://$PROJECT_DIR$/RPC-provider/src/test/java" />
+      <root url="file://$PROJECT_DIR$/seafish-RPC/src/main/java" />
+      <root url="file://$PROJECT_DIR$/seafish-RPC/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

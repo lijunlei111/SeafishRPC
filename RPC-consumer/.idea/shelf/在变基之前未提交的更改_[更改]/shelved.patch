@@ -1,0 +1,1036 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>com.Seafish.consumer</groupId>\r\n  <artifactId>RPC-consumer</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n  <packaging>jar</packaging>\r\n\r\n  <name>RPC-consumer</name>\r\n  <url>http://maven.apache.org</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>3.8.1</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/pom.xml	(date 1722838566883)
+@@ -11,15 +11,26 @@
+   <url>http://maven.apache.org</url>
+ 
+   <properties>
++    <maven.compiler.source>17</maven.compiler.source>
++    <maven.compiler.target>17</maven.compiler.target>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+ 
+   <dependencies>
+     <dependency>
+-      <groupId>junit</groupId>
+-      <artifactId>junit</artifactId>
+-      <version>3.8.1</version>
+-      <scope>test</scope>
++      <groupId>com.seafish.common</groupId>
++      <artifactId>RPC-common</artifactId>
++      <version>0.0.1</version>
++    </dependency>
++    <dependency>
++      <groupId>org.projectlombok</groupId>
++      <artifactId>lombok</artifactId>
++      <version>1.18.34</version>
++    </dependency>
++    <dependency>
++      <groupId>cn.hutool</groupId>
++      <artifactId>hutool-all</artifactId>
++      <version>5.8.27</version>
+     </dependency>
+   </dependencies>
+ </project>
+Index: ../RPC-common/src/main/java/com/Seafish/common/App.java
+===================================================================
+diff --git a/../RPC-common/src/main/java/com/Seafish/common/App.java b/../RPC-common/src/main/java/com/Seafish/common/App.java
+deleted file mode 100644
+--- a/../RPC-common/src/main/java/com/Seafish/common/App.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,13 +0,0 @@
+-package com.Seafish.common;
+-
+-/**
+- * Hello world!
+- *
+- */
+-public class App 
+-{
+-    public static void main( String[] args )
+-    {
+-        System.out.println( "Hello World!" );
+-    }
+-}
+Index: ../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java
+===================================================================
+diff --git a/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java b/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java
+deleted file mode 100644
+--- a/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,38 +0,0 @@
+-package com.Seafish.provider;
+-
+-import junit.framework.Test;
+-import junit.framework.TestCase;
+-import junit.framework.TestSuite;
+-
+-/**
+- * Unit test for simple App.
+- */
+-public class AppTest 
+-    extends TestCase
+-{
+-    /**
+-     * Create the test case
+-     *
+-     * @param testName name of the test case
+-     */
+-    public AppTest( String testName )
+-    {
+-        super( testName );
+-    }
+-
+-    /**
+-     * @return the suite of tests being tested
+-     */
+-    public static Test suite()
+-    {
+-        return new TestSuite( AppTest.class );
+-    }
+-
+-    /**
+-     * Rigourous Test :-)
+-     */
+-    public void testApp()
+-    {
+-        assertTrue( true );
+-    }
+-}
+Index: ../RPC-common/src/test/java/com/Seafish/common/AppTest.java
+===================================================================
+diff --git a/../RPC-common/src/test/java/com/Seafish/common/AppTest.java b/../RPC-common/src/test/java/com/Seafish/common/AppTest.java
+deleted file mode 100644
+--- a/../RPC-common/src/test/java/com/Seafish/common/AppTest.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,38 +0,0 @@
+-package com.Seafish.common;
+-
+-import junit.framework.Test;
+-import junit.framework.TestCase;
+-import junit.framework.TestSuite;
+-
+-/**
+- * Unit test for simple App.
+- */
+-public class AppTest 
+-    extends TestCase
+-{
+-    /**
+-     * Create the test case
+-     *
+-     * @param testName name of the test case
+-     */
+-    public AppTest( String testName )
+-    {
+-        super( testName );
+-    }
+-
+-    /**
+-     * @return the suite of tests being tested
+-     */
+-    public static Test suite()
+-    {
+-        return new TestSuite( AppTest.class );
+-    }
+-
+-    /**
+-     * Rigourous Test :-)
+-     */
+-    public void testApp()
+-    {
+-        assertTrue( true );
+-    }
+-}
+Index: ../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java
+===================================================================
+diff --git a/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java b/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java
+deleted file mode 100644
+--- a/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,38 +0,0 @@
+-package com.Seafish.RPC;
+-
+-import junit.framework.Test;
+-import junit.framework.TestCase;
+-import junit.framework.TestSuite;
+-
+-/**
+- * Unit test for simple App.
+- */
+-public class AppTest 
+-    extends TestCase
+-{
+-    /**
+-     * Create the test case
+-     *
+-     * @param testName name of the test case
+-     */
+-    public AppTest( String testName )
+-    {
+-        super( testName );
+-    }
+-
+-    /**
+-     * @return the suite of tests being tested
+-     */
+-    public static Test suite()
+-    {
+-        return new TestSuite( AppTest.class );
+-    }
+-
+-    /**
+-     * Rigourous Test :-)
+-     */
+-    public void testApp()
+-    {
+-        assertTrue( true );
+-    }
+-}
+Index: src/test/java/com/Seafish/consumer/AppTest.java
+===================================================================
+diff --git a/src/test/java/com/Seafish/consumer/AppTest.java b/src/test/java/com/Seafish/consumer/AppTest.java
+deleted file mode 100644
+--- a/src/test/java/com/Seafish/consumer/AppTest.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,38 +0,0 @@
+-package com.Seafish.consumer;
+-
+-import junit.framework.Test;
+-import junit.framework.TestCase;
+-import junit.framework.TestSuite;
+-
+-/**
+- * Unit test for simple App.
+- */
+-public class AppTest 
+-    extends TestCase
+-{
+-    /**
+-     * Create the test case
+-     *
+-     * @param testName name of the test case
+-     */
+-    public AppTest( String testName )
+-    {
+-        super( testName );
+-    }
+-
+-    /**
+-     * @return the suite of tests being tested
+-     */
+-    public static Test suite()
+-    {
+-        return new TestSuite( AppTest.class );
+-    }
+-
+-    /**
+-     * Rigourous Test :-)
+-     */
+-    public void testApp()
+-    {
+-        assertTrue( true );
+-    }
+-}
+Index: ../.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+deleted file mode 100644
+--- a/../.idea/vcs.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../seafish-RPC/src/main/java/com/Seafish/RPC/App.java
+===================================================================
+diff --git a/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java b/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java
+deleted file mode 100644
+--- a/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,13 +0,0 @@
+-package com.Seafish.RPC;
+-
+-/**
+- * Hello world!
+- *
+- */
+-public class App 
+-{
+-    public static void main( String[] args )
+-    {
+-        System.out.println( "Hello World!" );
+-    }
+-}
+Index: ../RPC-provider/src/main/java/com/Seafish/provider/App.java
+===================================================================
+diff --git a/../RPC-provider/src/main/java/com/Seafish/provider/App.java b/../RPC-provider/src/main/java/com/Seafish/provider/App.java
+deleted file mode 100644
+--- a/../RPC-provider/src/main/java/com/Seafish/provider/App.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,13 +0,0 @@
+-package com.Seafish.provider;
+-
+-/**
+- * Hello world!
+- *
+- */
+-public class App 
+-{
+-    public static void main( String[] args )
+-    {
+-        System.out.println( "Hello World!" );
+-    }
+-}
+Index: src/main/java/com/Seafish/consumer/App.java
+===================================================================
+diff --git a/src/main/java/com/Seafish/consumer/App.java b/src/main/java/com/Seafish/consumer/App.java
+deleted file mode 100644
+--- a/src/main/java/com/Seafish/consumer/App.java	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ /dev/null	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
+@@ -1,13 +0,0 @@
+-package com.Seafish.consumer;
+-
+-/**
+- * Hello world!
+- *
+- */
+-public class App 
+-{
+-    public static void main( String[] args )
+-    {
+-        System.out.println( "Hello World!" );
+-    }
+-}
+Index: ../RPC-common/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>com.Seafish.common</groupId>\r\n  <artifactId>RPC-common</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n  <packaging>jar</packaging>\r\n\r\n  <name>RPC-common</name>\r\n  <url>http://maven.apache.org</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>3.8.1</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../RPC-common/pom.xml b/../RPC-common/pom.xml
+--- a/../RPC-common/pom.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../RPC-common/pom.xml	(date 1722838566919)
+@@ -2,24 +2,15 @@
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+ 
+-  <groupId>com.Seafish.common</groupId>
++  <groupId>com.seafish.common</groupId>
+   <artifactId>RPC-common</artifactId>
+-  <version>1.0-SNAPSHOT</version>
++  <version>0.0.1</version>
+   <packaging>jar</packaging>
+ 
+-  <name>RPC-common</name>
+-  <url>http://maven.apache.org</url>
+-
+   <properties>
++    <maven.compiler.source>17</maven.compiler.source>
++    <maven.compiler.target>17</maven.compiler.target>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+ 
+-  <dependencies>
+-    <dependency>
+-      <groupId>junit</groupId>
+-      <artifactId>junit</artifactId>
+-      <version>3.8.1</version>
+-      <scope>test</scope>
+-    </dependency>
+-  </dependencies>
+ </project>
+Index: ../.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f6cda9ca-5e0e-41a6-b8d1-462d663e303d\" name=\"更改\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/src/main/java/com/Seafish/common/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-common/src/test/java/com/Seafish/common/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/src/main/java/com/Seafish/consumer/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/src/main/java/com/Seafish/provider/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/RPC-provider/src/test/java/com/Seafish/provider/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/src/main/java/com/Seafish/RPC/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2kDu20iunYbopEgaZObPT2qB6jA\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;E:/xiangmu/SeafishRPC&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.32413793&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"f6cda9ca-5e0e-41a6-b8d1-462d663e303d\" name=\"更改\" comment=\"\" />\r\n      <created>1722830259239</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1722830259239</updated>\r\n      <workItem from=\"1722830260349\" duration=\"463000\" />\r\n      <workItem from=\"1722831823331\" duration=\"70000\" />\r\n      <workItem from=\"1722831929225\" duration=\"128000\" />\r\n      <workItem from=\"1722832065850\" duration=\"35000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/workspace.xml b/../.idea/workspace.xml
+--- a/../.idea/workspace.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../.idea/workspace.xml	(date 1722838636454)
+@@ -5,39 +5,18 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f6cda9ca-5e0e-41a6-b8d1-462d663e303d" name="更改" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/src/main/java/com/Seafish/common/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-common/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/RPC-common/.idea/shelf/___.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RPC-common/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-common/src/main/java/com/Seafish/common/App.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-common/src/test/java/com/Seafish/common/AppTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RPC-consumer/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RPC-provider/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/seafish-RPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/seafish-RPC/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/seafish-RPC/src/main/java/com/Seafish/RPC/App.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -73,6 +52,21 @@
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="RunManager">
++    <configuration default="true" type="JetRunConfigurationType">
++      <module name="SeafishRPC" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
++      <module name="SeafishRPC" />
++      <option name="filePath" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="默认任务">
+@@ -85,6 +79,7 @@
+       <workItem from="1722831823331" duration="70000" />
+       <workItem from="1722831929225" duration="128000" />
+       <workItem from="1722832065850" duration="35000" />
++      <workItem from="1722838387273" duration="249000" />
+     </task>
+     <servers />
+   </component>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ad0f77d7-bf64-4c1b-9a2f-ed08d148e4b4\" name=\"更改\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/../.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/Seafish/consumer/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/Seafish/consumer/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2kDv97m71en7hstzUDJpedhH3TY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"E:/xiangmu/SeafishRPC/RPC-consumer\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"ad0f77d7-bf64-4c1b-9a2f-ed08d148e4b4\" name=\"更改\" comment=\"\" />\r\n      <created>1722830808629</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1722830808629</updated>\r\n      <workItem from=\"1722830809699\" duration=\"451000\" />\r\n      <workItem from=\"1722831901336\" duration=\"10000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/.idea/workspace.xml	(date 1722837968463)
+@@ -5,39 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="ad0f77d7-bf64-4c1b-9a2f-ed08d148e4b4" name="更改" comment="">
+-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -55,26 +26,28 @@
+     </option>
+   </component>
+   <component name="ProjectId" id="2kDv97m71en7hstzUDJpedhH3TY" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-consumer",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;E:/xiangmu/SeafishRPC/RPC-consumer&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="默认任务">
+Index: ../RPC-common/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"fbcf8b5c-0283-44af-b9ed-5be8bea05374\" name=\"更改\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/../.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/Seafish/common/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/Seafish/common/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2kDuyQ5k3VqLgzbsItPg0kGFULO\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"E:/xiangmu/SeafishRPC/RPC-common\",\r\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"fbcf8b5c-0283-44af-b9ed-5be8bea05374\" name=\"更改\" comment=\"\" />\r\n      <created>1722830723006</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1722830723006</updated>\r\n      <workItem from=\"1722831885439\" duration=\"7000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../RPC-common/.idea/workspace.xml b/../RPC-common/.idea/workspace.xml
+--- a/../RPC-common/.idea/workspace.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../RPC-common/.idea/workspace.xml	(date 1722838184876)
+@@ -4,40 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fbcf8b5c-0283-44af-b9ed-5be8bea05374" name="更改" comment="">
+-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/common/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
++    <list default="true" id="fbcf8b5c-0283-44af-b9ed-5be8bea05374" name="更改" comment="ADD common、provider、consumer">
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2024_8_5_14_04____.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/___.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -46,6 +19,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
++    <option name="RESET_MODE" value="MIXED" />
+   </component>
+   <component name="MavenImportPreferences">
+     <option name="importingSettings">
+@@ -55,7 +29,9 @@
+     </option>
+   </component>
+   <component name="ProjectId" id="2kDuyQ5k3VqLgzbsItPg0kGFULO" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -66,6 +42,10 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "WebServerToolWindowFactoryState": "false",
+     "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-common",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+     "vue.rearranger.settings.migration": "true"
+   }
+@@ -79,15 +59,96 @@
+       <option name="presentableId" value="Default" />
+       <updated>1722830723006</updated>
+       <workItem from="1722831885439" duration="7000" />
++      <workItem from="1722837804753" duration="380000" />
++    </task>
++    <task id="LOCAL-00001" summary="ADD common、provider、consumer">
++      <created>1722837257839</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1722837257839</updated>
++    </task>
++    <task id="LOCAL-00002" summary="ADD common、provider、consumer">
++      <created>1722837319118</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1722837319118</updated>
+     </task>
++    <task id="LOCAL-00003" summary="ADD common、provider、consumer">
++      <created>1722837348672</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1722837348672</updated>
++    </task>
++    <task id="LOCAL-00004" summary="ADD common、provider、consumer">
++      <created>1722837359948</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1722837359948</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/main" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++              <option name="COLUMN_ID_WIDTH">
++                <map>
++                  <entry key="Table.Default.Author.ColumnIdWidth" value="53" />
++                  <entry key="Table.Default.Date.ColumnIdWidth" value="75" />
++                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="40" />
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="RECENT_FILTERS">
++      <map>
++        <entry key="Branch">
++          <value>
++            <list>
++              <RecentGroup>
++                <option name="FILTER_VALUES">
++                  <option value="origin/test-branch" />
++                </option>
++              </RecentGroup>
++            </list>
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <ignored-roots>
+       <path value="$PROJECT_DIR$" />
+     </ignored-roots>
++    <MESSAGE value="ADD common、provider、consumer" />
++    <option name="LAST_COMMIT_MESSAGE" value="ADD common、provider、consumer" />
++  </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
+   </component>
+ </project>
+\ No newline at end of file
+Index: ../seafish-RPC/src/main/java/com/Seafish/RPC/Service/HttpService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../seafish-RPC/src/main/java/com/Seafish/RPC/Service/HttpService.java b/../seafish-RPC/src/main/java/com/Seafish/RPC/Service/HttpService.java
+new file mode 100644
+--- /dev/null	(date 1722838566914)
++++ b/../seafish-RPC/src/main/java/com/Seafish/RPC/Service/HttpService.java	(date 1722838566914)
+@@ -0,0 +1,10 @@
++package com.Seafish.RPC.Service;
++
++public interface HttpService {
++
++    /**
++     * 启动服务器
++     * @param port
++     */
++    void doStart(int port);
++}
+Index: ../seafish-RPC/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"19d5cdce-80ae-404e-9b66-d2261ec092b4\" name=\"更改\" comment=\"first commit\">\r\n      <change afterPath=\"$PROJECT_DIR$/../.idea/vcs.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2kDw3ZuHCRhcF8GjEr9rFRQlK6I\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"E:/xiangmu/SeafishRPC\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"19d5cdce-80ae-404e-9b66-d2261ec092b4\" name=\"更改\" comment=\"\" />\r\n      <created>1722831257691</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1722831257691</updated>\r\n      <workItem from=\"1722831258798\" duration=\"16000\" />\r\n      <workItem from=\"1722831721083\" duration=\"510000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first commit\">\r\n      <created>1722832151692</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1722832151692</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"first commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"first commit\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../seafish-RPC/.idea/workspace.xml b/../seafish-RPC/.idea/workspace.xml
+--- a/../seafish-RPC/.idea/workspace.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../seafish-RPC/.idea/workspace.xml	(date 1722838385894)
+@@ -5,7 +5,12 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="19d5cdce-80ae-404e-9b66-d2261ec092b4" name="更改" comment="first commit">
+-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/_2024_8_5_14_04____.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -14,6 +19,9 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="MavenImportPreferences">
+     <option name="importingSettings">
+@@ -23,7 +31,9 @@
+     </option>
+   </component>
+   <component name="ProjectId" id="2kDw3ZuHCRhcF8GjEr9rFRQlK6I" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -52,6 +62,8 @@
+       <updated>1722831257691</updated>
+       <workItem from="1722831258798" duration="16000" />
+       <workItem from="1722831721083" duration="510000" />
++      <workItem from="1722837797638" duration="391000" />
++      <workItem from="1722838367277" duration="19000" />
+     </task>
+     <task id="LOCAL-00001" summary="first commit">
+       <created>1722832151692</created>
+@@ -77,7 +89,7 @@
+                   <entry key="branch">
+                     <value>
+                       <list>
+-                        <option value="origin/main" />
++                        <option value="test-branch" />
+                       </list>
+                     </value>
+                   </entry>
+Index: ../seafish-RPC/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>com.Seafish.RPC</groupId>\r\n  <artifactId>seafish-RPC</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n  <packaging>jar</packaging>\r\n\r\n  <name>seafish-RPC</name>\r\n  <url>http://maven.apache.org</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>3.8.1</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../seafish-RPC/pom.xml b/../seafish-RPC/pom.xml
+--- a/../seafish-RPC/pom.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../seafish-RPC/pom.xml	(date 1722838566913)
+@@ -16,10 +16,19 @@
+ 
+   <dependencies>
+     <dependency>
+-      <groupId>junit</groupId>
+-      <artifactId>junit</artifactId>
+-      <version>3.8.1</version>
+-      <scope>test</scope>
++      <groupId>io.vertx</groupId>
++      <artifactId>vertx-core</artifactId>
++      <version>4.5.9</version>
++    </dependency>
++    <dependency>
++      <groupId>org.projectlombok</groupId>
++      <artifactId>lombok</artifactId>
++      <version>1.18.34</version>
++    </dependency>
++    <dependency>
++      <groupId>cn.hutool</groupId>
++      <artifactId>hutool-all</artifactId>
++      <version>5.8.27</version>
+     </dependency>
+   </dependencies>
+ </project>
+Index: ../seafish-RPC/src/main/java/com/Seafish/RPC/Service/Impl/HttpServiceImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../seafish-RPC/src/main/java/com/Seafish/RPC/Service/Impl/HttpServiceImpl.java b/../seafish-RPC/src/main/java/com/Seafish/RPC/Service/Impl/HttpServiceImpl.java
+new file mode 100644
+--- /dev/null	(date 1722838566915)
++++ b/../seafish-RPC/src/main/java/com/Seafish/RPC/Service/Impl/HttpServiceImpl.java	(date 1722838566915)
+@@ -0,0 +1,9 @@
++package com.Seafish.RPC.Service.Impl;
++
++import io.vertx.core.Vertx;
++
++public class HttpServiceImpl {
++    //创建Vert.x实例
++    Vertx vertx = Vertx.vertx();
++
++}
+Index: ../RPC-provider/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0b95de06-ccbf-4100-b91b-099fcc773914\" name=\"更改\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/../.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/Seafish/provider/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/Seafish/provider/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2kDvGczcuZB46nOSQhZa773oxZj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"E:/xiangmu/SeafishRPC/RPC-provider\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"0b95de06-ccbf-4100-b91b-099fcc773914\" name=\"更改\" comment=\"\" />\r\n      <created>1722830868161</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1722830868161</updated>\r\n      <workItem from=\"1722830869265\" duration=\"327000\" />\r\n      <workItem from=\"1722831917231\" duration=\"5000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../RPC-provider/.idea/workspace.xml b/../RPC-provider/.idea/workspace.xml
+--- a/../RPC-provider/.idea/workspace.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../RPC-provider/.idea/workspace.xml	(date 1722837968485)
+@@ -5,39 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="0b95de06-ccbf-4100-b91b-099fcc773914" name="更改" comment="">
+-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -55,25 +26,27 @@
+     </option>
+   </component>
+   <component name="ProjectId" id="2kDvGczcuZB46nOSQhZa773oxZj" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-provider",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;E:/xiangmu/SeafishRPC/RPC-provider&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="默认任务">
+@@ -89,6 +62,29 @@
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/test-branch" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <ignored-roots>
+Index: ../RPC-provider/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>com.Seafish.provider</groupId>\r\n  <artifactId>RPC-provider</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n  <packaging>jar</packaging>\r\n\r\n  <name>RPC-provider</name>\r\n  <url>http://maven.apache.org</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>3.8.1</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../RPC-provider/pom.xml b/../RPC-provider/pom.xml
+--- a/../RPC-provider/pom.xml	(revision 279f6d021c06bc3076cea138b14bd0256eaec46f)
++++ b/../RPC-provider/pom.xml	(date 1722838566872)
+@@ -11,15 +11,26 @@
+   <url>http://maven.apache.org</url>
+ 
+   <properties>
++    <maven.compiler.source>17</maven.compiler.source>
++    <maven.compiler.target>17</maven.compiler.target>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+ 
+   <dependencies>
+     <dependency>
+-      <groupId>junit</groupId>
+-      <artifactId>junit</artifactId>
+-      <version>3.8.1</version>
+-      <scope>test</scope>
++      <groupId>com.seafish.common</groupId>
++      <artifactId>RPC-common</artifactId>
++      <version>0.0.1</version>
++    </dependency>
++    <dependency>
++      <groupId>org.projectlombok</groupId>
++      <artifactId>lombok</artifactId>
++      <version>1.18.34</version>
++    </dependency>
++    <dependency>
++      <groupId>cn.hutool</groupId>
++      <artifactId>hutool-all</artifactId>
++      <version>5.8.27</version>
+     </dependency>
+   </dependencies>
+ </project>

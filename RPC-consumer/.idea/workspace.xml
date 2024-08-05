@@ -5,39 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0f77d7-bf64-4c1b-9a2f-ed08d148e4b4" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/consumer/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/Service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/在进行更新之前于_2024_8_5_12_36_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +47,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2kDv97m71en7hstzUDJpedhH3TY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-consumer",
+    "last_opened_file_path": "E:/xiangmu/SeafishRPC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

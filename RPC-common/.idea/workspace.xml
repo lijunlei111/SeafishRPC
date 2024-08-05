@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbcf8b5c-0283-44af-b9ed-5be8bea05374" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/common/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Seafish/common/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="fbcf8b5c-0283-44af-b9ed-5be8bea05374" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +32,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-common",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
@@ -79,11 +48,23 @@
       <option name="presentableId" value="Default" />
       <updated>1722830723006</updated>
       <workItem from="1722831885439" duration="7000" />
+      <workItem from="1722840327357" duration="521000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
