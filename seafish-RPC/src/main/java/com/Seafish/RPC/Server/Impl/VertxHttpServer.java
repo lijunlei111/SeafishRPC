@@ -1,14 +1,20 @@
-package com.Seafish.RPC.Service.Impl;
+package com.Seafish.RPC.Server.Impl;
 
-import com.Seafish.RPC.Service.HttpService;
+import com.Seafish.RPC.Server.HttpServer;
 import io.vertx.core.Vertx;
 
-public class HttpServiceImpl implements HttpService {
+
+/**
+ * 简易服务提供者示例
+ */
+public class VertxHttpServer implements HttpServer {
     public void doStart(int port) {
         // 创建 Vert.x 实例
         Vertx vertx = Vertx.vertx();
 
+
         // 创建 HTTP 服务器
+
         io.vertx.core.http.HttpServer server = vertx.createHttpServer();
 
         // 监听端口并处理请求

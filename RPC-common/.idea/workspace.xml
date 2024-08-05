@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbcf8b5c-0283-44af-b9ed-5be8bea05374" name="更改" comment="2">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Seafish/common/App.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/___.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Seafish/common/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +67,7 @@
       <updated>1722830723006</updated>
       <workItem from="1722831885439" duration="7000" />
       <workItem from="1722840327357" duration="521000" />
-      <workItem from="1722840870412" duration="738000" />
+      <workItem from="1722840870412" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1722841025427</created>

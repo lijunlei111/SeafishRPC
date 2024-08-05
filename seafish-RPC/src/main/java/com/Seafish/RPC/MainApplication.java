@@ -1,5 +1,9 @@
 package com.Seafish.RPC;
 
+
+import com.Seafish.RPC.Server.HttpServer;
+import com.Seafish.RPC.Server.Impl.VertxHttpServer;
+
 /**
  * Hello world!
  *
@@ -8,6 +12,7 @@ public class MainApplication
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        HttpServer httpServer = new VertxHttpServer();
+        httpServer.doStart(8080);
     }
 }

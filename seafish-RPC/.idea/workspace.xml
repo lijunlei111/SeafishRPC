@@ -4,40 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d5cdce-80ae-404e-9b66-d2261ec092b4" name="更改" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/___1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/.idea/shelf/在变基之前未提交的更改_[更改]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-common/src/main/java/com/Seafish/common/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RPC-provider/src/main/java/com/Seafish/provider/Service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024_8_5_12_36_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19d5cdce-80ae-404e-9b66-d2261ec092b4" name="更改" comment="delete app">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/___.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-provider/src/test/java/com/Seafish/provider/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_8_5_12_36____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/Service/HttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/Server/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/Service/Impl/HttpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/RPC/Server/Impl/VertxHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Seafish/RPC/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -59,7 +58,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/xiangmu/SeafishRPC&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/xiangmu/SeafishRPC/seafish-RPC&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -78,6 +77,8 @@
       <updated>1722831257691</updated>
       <workItem from="1722831258798" duration="16000" />
       <workItem from="1722831721083" duration="510000" />
+      <workItem from="1722841629619" duration="485000" />
+      <workItem from="1722845288615" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1722832151692</created>
@@ -86,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722832151692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete app">
+      <created>1722841661366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722841661366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +111,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -120,6 +128,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="delete app" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete app" />
   </component>
 </project>
