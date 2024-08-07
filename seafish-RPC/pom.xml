@@ -4,11 +4,8 @@
 
   <groupId>com.Seafish.RPC</groupId>
   <artifactId>seafish-RPC</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
-
-  <name>seafish-RPC</name>
-  <url>http://maven.apache.org</url>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -17,6 +14,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>com.seafish.common</groupId>
+      <artifactId>RPC-common</artifactId>
+      <version>0.0.1</version>
+    </dependency>
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-core</artifactId>

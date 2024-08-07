@@ -1,4 +1,4 @@
-package com.Seafish.RPC.Server;
+package com.Seafish.RPC.service.HttpServer;
 
 /**
  * HTTP 服务器接口

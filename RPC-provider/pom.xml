@@ -18,9 +18,19 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.Seafish.RPC</groupId>
+      <artifactId>seafish-RPC</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.seafish.common</groupId>
       <artifactId>RPC-common</artifactId>
       <version>0.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+      <version>4.5.9</version>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>

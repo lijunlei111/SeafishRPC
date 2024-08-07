@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b95de06-ccbf-4100-b91b-099fcc773914" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/___.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/proxy/ServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/proxy/ServiceProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/model/Processor/RpcRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/model/Processor/RpcResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/service/HttpServer/HttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/service/Serializer/JdkSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/service/Serializer/Serializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-common/src/test/java/com/Seafish/common/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPC-consumer/src/test/java/com/Seafish/consumer/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RPC-consumer/src/main/java/com/Seafish/consumer/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Seafish/provider/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/shelf/_2024_8_5_12_36____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Seafish/provider/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Seafish/provider/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seafish-RPC/src/test/java/com/Seafish/RPC/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/Server/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/service/HttpServer/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/Server/Impl/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/service/HttpServer/VertxHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/registry/LocalhostRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../seafish-RPC/src/main/java/com/Seafish/RPC/registry/LocalhostRegistry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/xiangmu/SeafishRPC/seafish-RPC",
+    "last_opened_file_path": "E:/xiangmu/SeafishRPC/RPC-provider",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +81,7 @@
       <workItem from="1722830869265" duration="327000" />
       <workItem from="1722831917231" duration="5000" />
       <workItem from="1722841244838" duration="870000" />
+      <workItem from="1723013922604" duration="2337000" />
     </task>
     <servers />
   </component>
@@ -102,5 +115,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Seafish/provider/Service/UserServiceImpl.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

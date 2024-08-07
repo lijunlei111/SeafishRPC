@@ -1,6 +1,9 @@
 package com.Seafish.provider;
 
-import com.Seafish.common.Model.entity.User;
+
+import com.Seafish.RPC.registry.LocalhostRegistry;
+import com.Seafish.RPC.service.HttpServer.HttpServer;
+import com.Seafish.RPC.service.HttpServer.VertxHttpServer;
 import com.Seafish.common.Service.UserService;
 import com.Seafish.provider.Service.UserServiceImpl;
 
@@ -12,8 +15,9 @@ public class MainApplication
 {
     public static void main( String[] args )
     {
-        User user = new User("ljl");
-        UserService userService = new UserServiceImpl();
-        userService.getUser(user);
+        LocalhostRegistry.registry(UserService.class.getName(), UserServiceImpl.class);
+
+        HttpServer httpServer = new VertxHttpServer();
+        httpServer.doStart(8080);
     }
 }

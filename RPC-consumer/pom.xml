@@ -18,6 +18,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.Seafish.RPC</groupId>
+      <artifactId>seafish-RPC</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.seafish.common</groupId>
       <artifactId>RPC-common</artifactId>
       <version>0.0.1</version>
